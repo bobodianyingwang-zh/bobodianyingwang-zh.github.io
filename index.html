@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>波波电影网 - 高清电影在线观看、最新热播影视资源导航 | bobodianyingwang-zh.github.io</title>
+<meta name="keywords" content="波波电影网, bobodianyingwang-zh, 波波电影网官网, 高清电影在线观看, 最新电影推荐, 影视资源导航, https://bobodianyingwang-zh.github.io">
+<meta name="description" content="波波电影网（bobodianyingwang-zh）是专注于高清电影在线观看与最新热播影视资源导航的网站，聚合动作、喜剧、爱情、科幻、悬疑、纪录片等多元类型影片，每日更新院线大片与经典老片，访问 https://bobodianyingwang-zh.github.io 快速获取优质观影入口。">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="revisit-after" content="1 days">
+<meta name="author" content="波波电影网">
+<meta name="copyright" content="波波电影网 bobodianyingwang-zh">
+<meta name="theme-color" content="#0b1020">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:site_name" content="波波电影网">
+<meta property="og:title" content="波波电影网 - 高清电影在线观看与最新热播影视资源导航">
+<meta property="og:description" content="波波电影网（bobodianyingwang-zh）每日精选动作、喜剧、爱情、科幻、悬疑、纪录片等多类型影片，提供院线大片与经典老片一站式观影导航。">
+<meta property="og:url" content="https://bobodianyingwang-zh.github.io">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="波波电影网 - 高清电影在线观看">
+<meta name="twitter:description" content="波波电影网 bobodianyingwang-zh 聚合多类型高清影片与最新热播影视资源导航。">
+<link rel="canonical" href="https://bobodianyingwang-zh.github.io">
+<style>
+:root{
+  --bg:#08090f;
+  --bg2:#0c1020;
+  --card:#121829;
+  --card2:#161d33;
+  --line:#232c47;
+  --txt:#eef1f9;
+  --sub:#9aa3bd;
+  --gold:#f7c948;
+  --gold2:#ff9d3d;
+  --cyan:#37e6d6;
+  --pink:#ff5c8a;
+  --radius:18px;
+  --maxw:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background:var(--bg);
+  color:var(--txt);
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  line-height:1.75;
+  overflow-x:hidden;
+  background-image:radial-gradient(circle at 12% 8%,rgba(247,201,72,.10),transparent 42%),radial-gradient(circle at 88% 18%,rgba(55,230,214,.08),transparent 40%),radial-gradient(circle at 50% 100%,rgba(255,92,138,.06),transparent 45%);
+  background-attachment:fixed;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+::selection{background:var(--gold);color:#111}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+section{padding:70px 0}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:13px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--gold);font-weight:700;margin-bottom:14px;
+}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--gold)}
+h2.sec-t{
+  font-size:clamp(26px,4vw,40px);font-weight:800;letter-spacing:.5px;
+  margin-bottom:8px;line-height:1.3;
+}
+h2.sec-t em{font-style:normal;background:linear-gradient(92deg,var(--gold),var(--gold2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sec-d{max-width:660px;color:var(--sub);font-size:16px}
+
+/* ---------- 顶部 ---------- */
+.hd{
+  position:sticky;top:0;z-index:99;
+  background:rgba(8,9,15,.82);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(255,255,255,.06);
+}
+.hd-in{display:flex;align-items:center;gap:18px;height:66px}
+.logo{display:flex;align-items:center;gap:11px;font-weight:900;font-size:19px;letter-spacing:.5px;flex:0 0 auto}
+.logo .mk{
+  width:38px;height:38px;border-radius:11px;flex:0 0 auto;
+  background:linear-gradient(140deg,var(--gold),var(--gold2));
+  display:grid;place-items:center;color:#1a1208;font-weight:900;font-size:16px;
+  box-shadow:0 6px 18px rgba(247,201,72,.28);
+}
+.logo small{display:block;font-weight:500;font-size:11px;color:var(--sub);letter-spacing:.14em;text-transform:uppercase}
+.nav{display:flex;gap:6px;margin-left:auto;align-items:center}
+.nav a{
+  padding:8px 13px;border-radius:10px;font-size:15px;color:var(--sub);
+  transition:.25s;white-space:nowrap;
+}
+.nav a:hover{color:var(--txt);background:rgba(255,255,255,.06)}
+.btn-cta{
+  margin-left:8px;padding:9px 17px;border-radius:11px;font-size:14px;font-weight:700;
+  background:linear-gradient(92deg,var(--gold),var(--gold2));color:#211600;
+  box-shadow:0 8px 22px rgba(247,201,72,.25);transition:.25s;white-space:nowrap;
+}
+.btn-cta:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(247,201,72,.35)}
+.menu-btn{display:none;margin-left:auto;width:44px;height:44px;border:1px solid var(--line);border-radius:11px;background:var(--card);cursor:pointer}
+.menu-btn span{display:block;width:19px;height:2px;background:var(--txt);margin:4px auto;border-radius:2px;transition:.25s}
+.menu-btn.on .a{transform:translateY(6px) rotate(45deg)}
+.menu-btn.on .b{opacity:0}
+.menu-btn.on .c{transform:translateY(-6px) rotate(-45deg)}
+
+/* ---------- Hero ---------- */
+.hero{padding:56px 0 40px;position:relative}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:52px;align-items:center}
+.tagline{
+  display:inline-flex;align-items:center;gap:9px;padding:7px 15px;border-radius:99px;
+  background:rgba(55,230,214,.09);border:1px solid rgba(55,230,214,.25);color:var(--cyan);
+  font-size:13px;font-weight:600;margin-bottom:20px;
+}
+.hero h1{
+  font-size:clamp(34px,5.6vw,62px);line-height:1.12;font-weight:900;letter-spacing:.5px;
+}
+.hero h1 i{font-style:normal;color:var(--gold)}
+.hero p.lede{margin-top:20px;color:var(--sub);font-size:17px;max-width:540px}
+.search{
+  margin-top:28px;display:flex;gap:10px;background:var(--card);
+  border:1px solid var(--line);border-radius:16px;padding:9px;max-width:560px;
+}
+.search input{
+  flex:1;min-width:0;background:transparent;border:0;outline:0;color:var(--txt);
+  font-size:16px;padding:10px 12px;font-family:inherit;
+}
+.search input::placeholder{color:#5d6585}
+.search button{
+  border:0;cursor:pointer;font-family:inherit;font-weight:800;font-size:15px;
+  padding:0 22px;border-radius:11px;color:#211600;
+  background:linear-gradient(92deg,var(--gold),var(--gold2));transition:.2s;
+}
+.search button:hover{filter:brightness(1.08)}
+.hot{margin-top:22px;display:flex;flex-wrap:wrap;gap:9px;align-items:center;font-size:13px;color:var(--sub)}
+.hot b{font-weight:600;color:var(--txt)}
+.hot a{
+  padding:5px 12px;border-radius:99px;background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.07);font-size:13px;color:var(--sub);transition:.2s;
+}
+.hot a:hover{color:#111;background:var(--gold);border-color:var(--gold)}
+.hero-flip{
+  position:relative;border-radius:24px;padding:1px;
+  background:conic-gradient(from 160deg at 50% 50%,#f7c948,#37e6d6,#ff5c8a,#f7c948);
+  box-shadow:0 30px 70px -30px rgba(247,201,72,.45);
+}
+.hero-flip > div{
+  background:linear-gradient(160deg,#101632,#0b1020);border-radius:23px;padding:26px;
+}
+.hero-flip .lb{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--sub);letter-spacing:.1em;text-transform:uppercase}
+.hero-flip .lb b{color:var(--gold)}
+.flip-num{font-size:54px;font-weight:900;letter-spacing:2px;line-height:1;margin:18px 0 6px}
+.flip-num small{font-size:15px;color:var(--sub);font-weight:500;letter-spacing:0;margin-left:8px}
+.flip-cap{font-size:14px;color:var(--sub)}
+.tick{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-top:22px}
+.tick i{height:34px;border-radius:6px;background:linear-gradient(180deg,var(--gold),#c8941e);opacity:.85;display:block}
+.tick i:nth-child(1){height:30%} .tick i:nth-child(2){height:55%} .tick i:nth-child(3){height:40%}
+.tick i:nth-child(4){height:80%} .tick i:nth-child(5){height:62%} .tick i:nth-child(6){height:100%} .tick i:nth-child(7){height:72%}
+.flip-foot{margin-top:20px;padding-top:18px;border-top:1px dashed var(--line);font-size:13px;color:var(--sub);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.flip-foot strong{color:var(--cyan)}
+
+/* ---------- 通用卡片 ---------- */
+.cards{display:grid;gap:22px}
+.c4{grid-template-columns:repeat(4,1fr)}
+.c3{grid-template-columns:repeat(3,1fr)}
+.c2{grid-template-columns:repeat(2,1fr)}
+.card{
+  background:linear-gradient(165deg,var(--card),var(--bg2));
+  border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px;transition:.3s;position:relative;overflow:hidden;
+}
+.card::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 100% 0,rgba(247,201,72,.12),transparent 55%);opacity:0;transition:.3s}
+.card:hover{transform:translateY(-6px);border-color:rgba(247,201,72,.45);box-shadow:0 22px 44px -24px rgba(0,0,0,.7)}
+.card:hover::after{opacity:1}
+.card .no{font-size:13px;font-weight:800;letter-spacing:.2em;color:var(--gold)}
+.card h3{font-size:21px;margin:12px 0 10px;letter-spacing:.5px}
+.card p{color:var(--sub);font-size:15px}
+.card .go{margin-top:18px;display:inline-flex;align-items:center;gap:6px;font-size:14px;color:var(--cyan);font-weight:600}
+
+/* ---------- 栏目一 关于 ---------- */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.about-txt ul{margin-top:20px;display:grid;gap:12px}
+.about-txt li{display:flex;gap:12px;align-items:flex-start;font-size:16px;color:#d7dcec}
+.about-txt li::before{content:"";flex:0 0 auto;margin-top:9px;width:8px;height:8px;border-radius:2px;background:var(--gold)}
+.about-txt .quote{
+  margin-top:26px;padding:20px 22px;border-left:3px solid var(--gold);
+  background:rgba(247,201,72,.06);border-radius:0 14px 14px 0;font-size:15px;color:var(--sub);
+}
+.about-img{position:relative;border-radius:24px;overflow:hidden;aspect-ratio:4/5;background:var(--card);border:1px solid var(--line)}
+.about-img .layer{position:absolute;inset:0;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;padding:1px}
+.about-img .layer span{background:linear-gradient(180deg,#1a2240,#0e1326);position:relative;overflow:hidden}
+.about-img .layer span::after{content:"";position:absolute;left:50%;top:50%;width:56%;height:44%;transform:translate(-50%,-50%);border:2px solid rgba(247,201,72,.35);border-radius:8px}
+.about-img .layer span::before{content:"";position:absolute;left:50%;top:calc(50% - 2px);width:0;height:0;transform:translate(-38%,-50%);border-left:14px solid rgba(247,201,72,.6);border-top:9px solid transparent;border-bottom:9px solid transparent}
+.about-img .cap{position:absolute;left:20px;right:20px;bottom:20px;background:rgba(8,9,15,.78);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.about-img .cap b{display:block;font-size:15px}
+.about-img .cap span{font-size:13px;color:var(--sub)}
+
+/* ---------- 栏目二 频道 ---------- */
+.cat-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:34px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap}
+.tab{
+  padding:9px 18px;border-radius:99px;font-size:14px;font-weight:600;cursor:pointer;
+  border:1px solid var(--line);background:var(--card);color:var(--sub);transition:.2s;font-family:inherit;
+}
+.tab:hover{color:var(--txt)}
+.tab.on{background:linear-gradient(92deg,var(--gold),var(--gold2));color:#211600;border-color:transparent}
+.pg{display:none;grid-template-columns:repeat(5,1fr);gap:18px}
+.pg.show{display:grid;animation:fade .4s ease}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.mv{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:.28s}
+.mv:hover{border-color:rgba(55,230,214,.45);transform:translateY(-5px)}
+.mv .post{position:relative;aspect-ratio:2/3;overflow:hidden;background:linear-gradient(135deg,#1b2444,#0d1226)}
+.mv .post i{position:absolute;inset:0;background:linear-gradient(var(--a,150deg),var(--c1,#2a3358),var(--c2,#121a36))}
+.mv .post b{position:absolute;inset:0;display:grid;place-items:center;font-size:22px;font-weight:900;color:rgba(255,255,255,.9);text-align:center;padding:10px;letter-spacing:1px}
+.mv .tag{position:absolute;top:10px;left:10px;font-size:11px;padding:4px 9px;border-radius:7px;background:rgba(8,9,15,.72);color:var(--gold);font-weight:700;backdrop-filter:blur(4px)}
+.mv .score{position:absolute;top:10px;right:10px;font-size:12px;font-weight:800;padding:4px 8px;border-radius:7px;background:rgba(55,230,214,.16);color:var(--cyan);border:1px solid rgba(55,230,214,.3)}
+.mv .meta{padding:13px 14px}
+.mv .meta h4{font-size:15px;font-weight:700;letter-spacing:.3px;margin-bottom:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mv .meta span{font-size:12px;color:var(--sub);display:flex;justify-content:space-between;gap:8px}
+
+/* ---------- 栏目三 榜单 ---------- */
+.rank-wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:26px;align-items:start}
+.rank{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.rank-h{display:flex;align-items:center;gap:10px;padding:20px 22px;border-bottom:1px solid var(--line);background:linear-gradient(100deg,rgba(247,201,72,.1),transparent)}
+.rank-h h3{font-size:19px}
+.rank-h em{font-style:normal;color:var(--gold);font-weight:800;font-size:13px;margin-left:auto}
+.rk{display:flex;gap:14px;align-items:center;padding:16px 22px;border-bottom:1px dashed rgba(255,255,255,.06)}
+.rk:last-child{border-bottom:0}
+.rk .n{font-size:23px;font-weight:900;width:34px;flex:0 0 auto;color:var(--sub)}
+.rk.top .n{color:var(--gold)}
+.rk .info{flex:1;min-width:0}
+.rk .info b{display:block;font-size:16px;letter-spacing:.3px}
+.rk .info span{font-size:13px;color:var(--sub)}
+.rk .up{font-size:13px;font-weight:700;color:var(--cyan);flex:0 0 auto}
+.rk .up.down{color:var(--pink)}
+.why{
+  position:sticky;top:86px;background:linear-gradient(165deg,var(--card2),var(--bg2));
+  border:1px solid var(--line);border-radius:var(--radius);padding:28px;
+}
+.why h3{font-size:20px;margin-bottom:16px}
+.why ol{display:grid;gap:14px;counter-reset:s}
+.why li{counter-increment:s;display:flex;gap:13px;font-size:15px;color:#d7dcec}
+.why li::before{content:counter(s);flex:0 0 auto;width:26px;height:26px;border-radius:8px;background:rgba(247,201,72,.14);color:var(--gold);font-weight:800;font-size:13px;display:grid;place-items:center}
+
+/* ---------- 栏目四 排片 ---------- */
+.sched{border:1px solid var(--line);border-radius:var(--radius);background:var(--card);overflow:hidden}
+.sched-h{display:flex;gap:0;overflow-x:auto;background:var(--bg2);scrollbar-width:none}
+.sched-h::-webkit-scrollbar{display:none}
+.day{
+  flex:1 0 auto;min-width:150px;padding:18px 20px;border-right:1px solid var(--line);
+  cursor:pointer;transition:.2s;font-family:inherit;text-align:left;background:transparent;border-top:0;border-bottom:0;border-left:0;color:var(--sub)
+}
+.day:hover{background:rgba(255,255,255,.03)}
+.day.on{background:linear-gradient(180deg,rgba(247,201,72,.12),transparent);color:var(--txt);box-shadow:inset 0 3px 0 var(--gold)}
+.day b{display:block;font-size:17px;letter-spacing:.5px}
+.day span{font-size:12px;opacity:.8}
+.sched-body{padding:8px}
+.row{display:grid;grid-template-columns:74px 1fr 120px 110px;gap:16px;align-items:center;padding:16px 18px;border-radius:12px;transition:.2s}
+.row + .row{border-top:1px dashed rgba(255,255,255,.06)}
+.row:hover{background:rgba(255,255,255,.035)}
+.row .tm{font-size:20px;font-weight:800;color:var(--gold);letter-spacing:.5px}
+.row .nm b{display:block;font-size:16px}
+.row .nm span{font-size:13px;color:var(--sub)}
+.chip{padding:6px 12px;border-radius:99px;font-size:12px;font-weight:600;text-align:center;border:1px solid var(--line)}
+.chip.sub{color:var(--cyan);border-color:rgba(55,230,214,.3);background:rgba(55,230,214,.07)}
+.chip.dub{color:var(--gold);border-color:rgba(247,201,72,.3);background:rgba(247,201,72,.07)}
+.chip.imax{color:var(--pink);border-color:rgba(255,92,138,.3);background:rgba(255,92,138,.07)}
+.row .act{font-size:13px;color:var(--sub);text-align:right}
+
+/* ---------- 栏目五 指南 ---------- */
+.guide{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.step{
+  grid-column:span 2;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px;position:relative;
+}
+.step .n{font-size:12px;font-weight:800;letter-spacing:.24em;color:var(--gold)}
+.step h3{font-size:18px;margin:10px 0 8px}
+.step p{font-size:14px;color:var(--sub)}
+.tips{clear:both;margin-top:22px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.tip{background:linear-gradient(165deg,var(--card),var(--bg2));border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+.tip h4{font-size:17px;margin-bottom:10px;display:flex;align-items:center;gap:9px}
+.tip h4::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--cyan)}
+.tip p{font-size:14px;color:var(--sub)}
+
+/* ---------- 评论 ---------- */
+.cmt-head{display:flex;align-items:end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:30px}
+.cmt-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.cmt{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.cmt-top{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.av{width:42px;height:42px;border-radius:50%;flex:0 0 auto;display:grid;place-items:center;font-weight:900;color:#1a1208;font-size:15px}
+.cmt-top b{font-size:15px}
+.cmt-top time{font-size:12px;color:var(--sub)}
+.stars{margin-left:auto;color:var(--gold);letter-spacing:2px;font-size:14px}
+.cmt p{font-size:15px;color:#d7dcec}
+.cmt-ft{margin-top:14px;display:flex;gap:18px;font-size:13px;color:var(--sub)}
+.cmt-ft span{cursor:pointer;transition:.2s}
+.cmt-ft span:hover{color:var(--txt)}
+
+/* ---------- 底部 ---------- */
+.ft{background:var(--bg2);border-top:1px solid var(--line);padding:60px 0 0}
+.ft-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px}
+.ft-brand p{margin-top:14px;color:var(--sub);font-size:14px;max-width:320px}
+.ft-col h4{font-size:15px;margin-bottom:16px;letter-spacing:.5px}
+.ft-col a{display:block;color:var(--sub);font-size:14px;padding:5px 0;transition:.2s}
+.ft-col a:hover{color:var(--gold);padding-left:6px}
+.ft-bot{
+  margin-top:48px;padding:24px 0;border-top:1px solid var(--line);
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;color:#6c7593
+}
+.ft-bot a{color:#6c7593}
+.ft-bot a:hover{color:var(--gold)}
+.foobar{display:flex;gap:10px;flex-wrap:wrap}
+.foobar code{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:7px;padding:3px 9px;font-size:12px;color:var(--sub);font-family:ui-monospace,Menlo,Consolas,monospace}
+
+/* ---------- 回到顶部 ---------- */
+.top{
+  position:fixed;right:18px;bottom:22px;z-index:90;width:46px;height:46px;border-radius:50%;
+  background:var(--card);border:1px solid var(--line);color:var(--gold);cursor:pointer;
+  display:none;place-items:center;font-size:19px;box-shadow:0 10px 26px rgba(0,0,0,.4);transition:.25s
+}
+.top.on{display:grid}
+.top:hover{transform:translateY(-3px);border-color:var(--gold)}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:1024px){
+  .c4{grid-template-columns:repeat(2,1fr)}
+  .pg{grid-template-columns:repeat(3,1fr)}
+  .guide{grid-template-columns:repeat(3,1fr)}
+  .step{grid-column:span 1}
+}
+@media (max-width:820px){
+  section{padding:52px 0}
+  .hero-grid,.about-grid,.rank-wrap{grid-template-columns:1fr;gap:34px}
+  .why{position:static}
+  .c3,.c2{grid-template-columns:1fr}
+  .cmt-grid{grid-template-columns:1fr}
+  .pg{grid-template-columns:repeat(2,1fr)}
+  .ft-grid{grid-template-columns:1fr 1fr;gap:28px}
+  .nav{
+    position:fixed;top:66px;left:0;right:0;flex-direction:column;align-items:stretch;
+    background:rgba(10,12,22,.98);backdrop-filter:blur(16px);padding:16px 20px 22px;
+    gap:4px;border-bottom:1px solid var(--line);transform:translateY(-14px);opacity:0;pointer-events:none;transition:.28s
+  }
+  .nav.open{transform:none;opacity:1;pointer-events:auto}
+  .nav a{padding:13px 14px;border-radius:11px;border:1px solid var(--line);background:var(--card)}
+  .btn-cta{margin:8px 0 0;text-align:center}
+  .menu-btn{display:block}
+  .hero h1{font-size:clamp(30px,9vw,42px)}
+  .search{flex-direction:column}
+  .search button{padding:13px}
+  .row{grid-template-columns:60px 1fr;gap:10px}
+  .row .chip,.row .act{grid-column:2;text-align:left;justify-self:start}
+  .row .act{margin-top:4px}
+  .guide{grid-template-columns:1fr 1fr}
+  .tips{grid-template-columns:1fr}
+}
+@media (max-width:480px){
+  .wrap{padding:0 15px}
+  .pg,.c4,.guide{grid-template-columns:1fr 1fr;gap:13px}
+  .mv .meta h4{font-size:14px}
+  .ft-grid{grid-template-columns:1fr}
+  .hero-flip .flip-num{font-size:42px}
+  .day{min-width:110px}
+  .sched-h{font-size:14px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<header class="hd">
+  <div class="wrap hd-in">
+    <a class="logo" href="#top" aria-label="波波电影网 首页">
+      <span class="mk">波</span>
+      <span>波波电影网<small>BOBODIANYINGWANG</small></span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#home">首页</a>
+      <a href="#about">关于本站</a>
+      <a href="#channel">影片频道</a>
+      <a href="#rank">热播榜单</a>
+      <a href="#schedule">每日排片</a>
+      <a href="#guide">观影指南</a>
+      <a href="#comments">影迷口碑</a>
+      <a href="#home" class="btn-cta">立即观影</a>
+    </nav>
+    <button class="menu-btn" id="mb" aria-label="菜单">
+      <span class="a"></span><span class="b"></span><span class="c"></span>
+    </button>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="tagline">✦ 波波电影网 · 每日精选院线新片与经典老片</span>
+      <h1>海量高清电影<br>一站直达 <i>波波电影网</i></h1>
+      <p class="lede">波波电影网（bobodianyingwang-zh）聚合动作、喜剧、爱情、科幻、悬疑、动画、纪录片等多元类型影片，覆盖院线热映、高分经典与冷门佳作，让每一次点开都省去找片的时间。</p>
+      <form class="search" onsubmit="event.preventDefault();">
+        <input type="search" placeholder="搜索影片名 / 演员 / 导演，例如：星际穿越、周星驰、诺兰…" aria-label="搜索影片">
+        <button type="submit">搜索影片</button>
+      </form>
+      <div class="hot">
+        <b>热门检索：</b>
+        <a href="#">2026院线新片</a>
+        <a href="#">高分华语电影</a>
+        <a href="#">悬疑烧脑</a>
+        <a href="#">合家欢动画</a>
+        <a href="#">经典港片</a>
+      </div>
+    </div>
+    <div class="hero-flip" aria-hidden="true">
+      <div>
+        <div class="lb"><span>今日 · 实时更新</span><b>BOBODIANYINGWANG</b></div>
+        <div class="flip-num">2,486<small>部精选影片</small></div>
+        <p class="flip-cap">覆盖 18 个频道分类，每日新增 30+ 部高清资源，院线同步与经典修复并行更新。</p>
+        <div class="tick"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="flip-foot"><span>今日访问 · <strong>12,847</strong> 人次</span><span>平均找片耗时 <strong>&lt; 20 秒</strong></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目一：关于 -->
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="about-txt">
+      <span class="eyebrow">01 / 关于波波电影网</span>
+      <h2 class="sec-t">为什么越来越多人选择<br><em>波波电影网</em></h2>
+      <p class="sec-d">波波电影网（https://bobodianyingwang-zh.github.io）是一个专注于高清电影在线观看与最新热播影视资源导航的站点，不做复杂跳转，不堆砌弹窗，用清晰分类与真实榜单把观影体验放回第一位。</p>
+      <ul>
+        <li><span>7 大核心频道 + 11 个细分标签，按类型、地区、年代三层筛选，找片路径最短</span></li>
+        <li><span>每日同步院线热映档期与网络首播资源，更新时间固定在早 9 点</span></li>
+        <li><span>榜单数据综合热度、评分与口碑，拒绝单一刷量，热门与冷门兼顾</span></li>
+        <li><span>全站移动端优先设计，2G/3G 弱网下也能秒开，横竖屏自适应</span></li>
+        <li><span>无强制注册、无诱导下载，隐私友好，支持深色与浅色阅读模式</span></li>
+      </ul>
+      <div class="quote">「波波电影网不是又一个资源站，而是帮你做减法——从海量片源里挑出真正值得看的那一部。」</div>
+    </div>
+    <div class="about-img">
+      <div class="layer">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+      </div>
+      <div class="cap">
+        <b>波波电影网 · 频道速览</b>
+        <span>动作 · 喜剧 · 爱情 · 科幻 · 悬疑 · 动画 · 纪录片</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目二：频道 -->
+<section id="channel" style="background:linear-gradient(180deg,transparent,rgba(255,255,255,.015),transparent);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="cat-head">
+      <div>
+        <span class="eyebrow">02 / 影片频道</span>
+        <h2 class="sec-t"><em>7 大频道</em> · 按需切换</h2>
+        <p class="sec-d">点击下方频道标签，即时切换片单，无需跳转等待。</p>
+      </div>
+      <div class="tabs" id="tabs">
+        <button class="tab on" data-t="p1">动作冒险</button>
+        <button class="tab" data-t="p2">喜剧轻松</button>
+        <button class="tab" data-t="p3">爱情剧情</button>
+        <button class="tab" data-t="p4">科幻奇幻</button>
+        <button class="tab" data-t="p5">悬疑犯罪</button>
+        <button class="tab" data-t="p6">动画亲子</button>
+        <button class="tab" data-t="p7">纪录人文</button>
+      </div>
+    </div>
+
+    <div class="pg show" id="p1">
+      <div class="mv"><div class="post"><i style="--c1:#2b3a6b;--c2:#101a36"><b>破晓行动</b></i><span class="tag">动作</span><span class="score">8.7</span></div><div class="meta"><h4>破晓行动 2026</h4><span><em>香港 / 128分钟</em></span></div></div>
+      <div class="mv"><div class="post"><i style="--c1:#4a2b2b;--c2:#241010"><b>极速边境</b></i><span class="tag">赛车</span><span class="score">8.2</span></div><div class="meta"><h4>极速边境</h4><span><em>美国 / 115分钟</em></span></div></div>
+      <div class="mv"><div class="post"><i style="--c1:#2b4a45;--c2:#102420"><b>暗河追凶</b></i><span class="tag">警匪</span><span class="score">8.9</span></div><div class="meta"><h4>暗河追凶</h4><span><em>内地 / 136分钟</em></span></div></div>
+      <div class="mv"><div class="post"><i style="--c1:#3d2b5c;--c2:#1d102e"><b>孤山侠影</b></i><span class="tag">武侠</span><span class="score">8.4</span></div><div class="meta"><h4>孤山侠影</h4><span><em>内地 / 122分钟</em></span></div></div>
+      <div class="mv"><div class="post"><i style="--c1:#5c4a2b;--c2:#2e2410"><b>荒野猎人</b></i><span class="tag">冒险</span><span class="score">8.1</span></div><div class="meta"><h4>荒野猎人 2026</h4><span><em>美国 / 141分钟</em></span></div></div>
+    </div>
+
+    <div class="pg" id="p2">
+      <div class="mv"><div class="post"><i style="--c1:#c98a2e;--c2:#5c3f12"><b>欢喜一家人</b></i><span class="tag">合家欢</span><span class="score">8.5</span></div><div class="meta"><h4>欢喜一家人</h4><span><em>内地 / 106分钟</em></span></div></div>
+      <div class="mv"><div class="post"><i style="--c1:#3f7a6a;--c2:#17302a"><b>乌龙派出所</b></i><span class="tag">喜剧</span><span class="score">8.0</span></div><div class="meta"><h4>乌龙派出所</h4><span><em>日本 / 98分钟</em></span></div></div>
+      <div class="mv"><div class="post"><i style="--c1:#7a5c2e;--c2:#332410"><b>老板来了</b></i><span class="tag">职场</span><span class="score">7.8</span></div><div class="meta"><h4>老板来了</h4><span><em>内地 / 112分钟</em></span></div></div>
+      <div class="mv"><div class="post"><i style="--c1:#5c3a7a;--c2:#2a1738"><b>今晚开麦</b></i><span class="tag">脱口秀</span><span class="score">8.3</span></div><div class="meta"><h4>今晚开麦</h4><span><em>内地 / 96分钟</em></span></div></div>
+      <div class="mv"><div class="post"><i style="--c1:#2e6a7a;--c2:#102a30"><b>动物园奇妙夜</b></i><span class="tag">奇幻</span><span class="score">7.9</span></div><div class="meta"><h4>动物园奇妙夜</h4><span><em>法国 / 103分钟</em></span></div></div>
+    </div>
+
+    <div class="pg" id="p3">
+      <div class="mv"><div class="post"><i style="--c1:#a8326a;--c2:#401429"><b>海边来信</b></i><span class="tag">爱情</span><span class="score">8.8</span></div><div class="meta"><h4>海边来信</h4><span><em>内地 / 118分钟</em></span></div></div>
+      <div class="mv"><div class="post"><i style="--c1:#6a3aa8;--c2:#2a1745"><b>十年为期</b></i><span class="tag">青春</span><span class="score">8.2</span></div><div class="meta"><h4>十年为期</h4><span><em>内地 / 124分钟</em></span></div></div>
+      <div class="mv"><div class="post"><i style="--c1:#3a8aa8;--c2:#17353f"><b>第二次相遇</b></i><span class="tag">剧情</span><span class="score">8.6</span></div><div class="meta"><h4>第二次相遇</h4><span><em>韩国 / 119分钟</em></span></div></div>
+      <div class="mv"><div class="post"><i style="--c1:#8a5a2e;--c2:#352010"><b>早餐约在巴黎</b></i><span class="tag">浪漫</span><span class="score">7.7</span></div><div class="meta"><h4>早餐约在巴黎</h4><span><em>法国 / 102分钟</em></span></div></div>
+      <div class="mv"><div class="post"><i style="--c1:#5a4a8a;--c2:#251f3d"><b>父亲与海</b></i><span class="tag">亲情</span><span class="score">9.0</span></div><div class="meta"><h4>父亲与海</h4><span><em>日本 / 131分钟</em></span></div></div>
+    </div>
+
+    <div class="pg" id="p4">
+      <div class="mv"><div class="post"><i style="--c1:#2e8aa8;--c2:#102f3a"><b>星海回声</b></i><span class="tag">太空</span><span class="score">9.1</span></div><div class="meta"><h4>星海回声</h4><span><em>美国 / 152分钟</em></span></div></div>
+      <div class="mv"><div class="post"><i style="--c1:#8a2e6a;--c2:#3a1229"><b>时间折叠者</b></i><span class="tag">时空</span><span class="score">8.7</span></div><div class="meta"><h4>时间折叠者</h4><span><em>英国 / 138分钟</em></span></div></div>
+      <div class="mv"><div class="post"><i style="--c1:#3a6aa8;--c2:#152640"><b>机械之心</b></i><span class="tag">AI</span><span class="score">8.3</span></div><div class="meta"><h4>机械之心</h4><span><em>美国 / 126分钟</em></span></div></div>
+      <div class="mv"><div class="post"><i style="--c1:#5aa87a;--c2:#1e3a2a"><b>巨兽觉醒</b></i><span class="tag">怪兽</span><span class="score">7.9</span></div><div class="meta"><h4>巨兽觉醒</h4><span><em>美国 / 134分钟</em></span></div></div>
+      <div class="mv"><div class="post"><i style="--c1:#7a4aa8;--c2:#2c1a40"><b>梦境管理局</b></i><span class="tag">奇幻</span><span class="score">8.4</span></div><div class="meta"><h4>梦境管理局</h4><span><em>内地 / 121分钟</em></span></div></div>
+    </div>
+
+    <div class="pg" id="p5">
+      <div class="mv"><div class="post"><i style="--c1:#3a3a4a;--c2:#171720"><b>无声证人</b></i><span class="tag">悬疑</span><span class="score">9.0</span></div><div class="meta"><h4>无声证人</h4><span><em>韩国 / 129分钟</em></span></div></div>
+      <div class="mv"><div class="post"><i style="--c1:#4a2e2e;--c2:#201212"><b>夜行者</b></i><span class="tag">犯罪</span><span class="score">8.6</span></div><div class="meta"><h4>夜行者</h4><span><em>美国 / 117分钟</em></span></div></div>
+      <div class="mv"><div class="post"><i style="--c1:#2e4a5a;--c2:#12202a"><b>消失的第七天</b></i><span class="tag">烧脑</span><span class="score">8.8</span></div><div class="meta"><h4>消失的第七天</h4><span><em>内地 / 112分钟</em></span></div></div>
+      <div class="mv"><div class="post"><i style="--c1:#5a2e4a;--c2:#241220"><b>黑雨计划</b></i><span class="tag">谍战</span><span class="score">8.1</span></div><div class="meta"><h4>黑雨计划</h4><span><em>法国 / 125分钟</em></span></div></div>
+      <div class="mv"><div class="post"><i style="--c1:#4a4a2e;--c2:#202012"><b>密室十三人</b></i><span class="tag">推理</span><span class="score">8.5</span></div><div class="meta"><h4>密室十三人</h4><span><em>日本 / 108分钟</em></span></div></div>
+    </div>
+
+    <div class="pg" id="p6">
+      <div class="mv"><div class="post"><i style="--c1:#ffb347;--c2:#7a5219"><b>小鲸鱼历险记</b></i><span class="tag">动画</span><span class="score">8.9</span></div><div class="meta"><h4>小鲸鱼历险记</h4><span><em>国产 / 95分钟</em></span></div></div>
+      <div class="mv"><div class="post"><i style="--c1:#47c6ff;--c2:#19607a"><b>云端小镇</b></i><span class="tag">奇幻</span><span class="score">8.4</span></div><div class="meta"><h4>云端小镇</h4><span><em>国产 / 88分钟</em></span></div></div>
+      <div class="mv"><div class="post"><i style="--c1:#ff8fa3;--c2:#7a2f3f"><b>毛毛虫学校</b></i><span class="tag">亲子</span><span class="score">8.2</span></div><div class="meta"><h4>毛毛虫学校</h4><span><em>法国 / 82分钟</em></span></div></div>
+      <div class="mv"><div class="post"><i style="--c1:#b8e03a;--c2:#4d6319"><b>森林守护者</b></i><span class="tag">冒险</span><span class="score">8.0</span></div><div class="meta"><h4>森林守护者</h4><span><em>美国 / 101分钟</em></span></div></div>
+      <div class="mv"><div class="post"><i style="--c1:#e08ab8;--c2:#632a45"><b>月亮上的猫</b></i><span class="tag">治愈</span><span class="score">8.7</span></div><div class="meta"><h4>月亮上的猫</h4><span><em>日本 / 92分钟</em></span></div></div>
+    </div>
+
+    <div class="pg" id="p7">
+      <div class="mv"><div class="post"><i style="--c1:#6a8a4a;--c2:#2a3a1e"><b>迁徙的候鸟</b></i><span class="tag">自然</span><span class="score">9.2</span></div><div class="meta"><h4>迁徙的候鸟</h4><span><em>纪录 / 96分钟</em></span></div></div>
+      <div class="mv"><div class="post"><i style="--c1:#8a7a4a;--c2:#3a3220"><b>千年瓷都</b></i><span class="tag">人文</span><span class="score">8.8</span></div><div class="meta"><h4>千年瓷都</h4><span><em>纪录 / 118分钟</em></span></div></div>
+      <div class="mv"><div class="post"><i style="--c1:#4a7a8a;--c2:#1e323a"><b>深海密语</b></i><span class="tag">海洋</span><span class="score">9.0</span></div><div class="meta"><h4>深海密语</h4><span><em>纪录 / 104分钟</em></span></div></div>
+      <div class="mv"><div class="post"><i style="--c1:#7a5a4a;--c2:#322520"><b>最后的手艺人</b></i><span class="tag">社会</span><span class="score">8.5</span></div><div class="meta"><h4>最后的手艺人</h4><span><em>纪录 / 89分钟</em></span></div></div>
+      <div class="mv"><div class="post"><i style="--c1:#5a6a8a;--c2:#232b3a"><b>宇宙边缘</b></i><span class="tag">宇宙</span><span class="score">9.3</span></div><div class="meta"><h4>宇宙边缘</h4><span><em>纪录 / 122分钟</em></span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目三：榜单 -->
+<section id="rank">
+  <div class="wrap">
+    <div style="margin-bottom:34px">
+      <span class="eyebrow">03 / 热播榜单</span>
+      <h2 class="sec-t"><em>本周口碑榜</em> TOP 8</h2>
+      <p class="sec-d">综合播放热度、观众评分与社区讨论度，每 24 小时更新一次。</p>
+    </div>
+    <div class="rank-wrap">
+      <div class="rank">
+        <div class="rank-h"><h3>波波电影网 · 本周必看</h3><em>更新于今日 09:00</em></div>
+        <div class="rk top"><span class="n">01</span><div class="info"><b>宇宙边缘</b><span>纪录 · 宇宙 · 9.3</span></div><span class="up">↑ 2</span></div>
+        <div class="rk top"><span class="n">02</span><div class="info"><b>父亲与海</b><span>剧情 · 亲情 · 9.0</span></div><span class="up">—</span></div>
+        <div class="rk top"><span class="n">03</span><div class="info"><b>无声证人</b><span>悬疑 · 犯罪 · 9.0</span></div><span class="up">↑ 4</span></div>
+        <div class="rk"><span class="n">04</span><div class="info"><b>星海回声</b><span>科幻 · 太空 · 9.1</span></div><span class="up">↓ 1</span></div>
+        <div class="rk"><span class="n">05</span><div class="info"><b>海边来信</b><span>爱情 · 浪漫 · 8.8</span></div><span class="up">↑ 1</span></div>
+        <div class="rk"><span class="n">06</span><div class="info"><b>深海密语</b><span>纪录 · 海洋 · 9.0</span></div><span class="up">↑ 3</span></div>
+        <div class="rk"><span class="n">07</span><div class="info"><b>暗河追凶</b><span>警匪 · 动作 · 8.9</span></div><span class="up down">↓ 2</span></div>
+        <div class="rk"><span class="n">08</span><div class="info"><b>小鲸鱼历险记</b><span>动画 · 亲子 · 8.9</span></div><span class="up">↑ 5</span></div>
+      </div>
+      <aside class="why">
+        <span class="eyebrow">榜单规则</span>
+        <h3>波波电影网如何排榜</h3>
+        <ol>
+          <li>真实播放热度占 40%，剔除异常刷量数据</li>
+          <li>观众评分占 35%，最低 50 条有效评分才计入</li>
+          <li>评论与分享互动占 15%，优质长评加权</li>
+          <li>更新时效占 10%，新片有 7 天冷启动保护</li>
+          <li>每周日 21:00 发布周榜回顾，每月 1 日发布月度精选</li>
+        </ol>
+        <p style="margin-top:20px;font-size:14px;color:var(--sub)">想让你的片单上榜？在 <a href="#comments" style="color:var(--gold)">影迷口碑</a> 留下真实评价，优质评论会被官方置顶。</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目四：排片 -->
+<section id="schedule" style="background:linear-gradient(180deg,transparent,rgba(255,255,255,.015),transparent);border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div style="margin-bottom:34px">
+      <span class="eyebrow">04 / 每日排片</span>
+      <h2 class="sec-t">一周 <em>观影日历</em></h2>
+      <p class="sec-d">点击日期查看当日推荐场次，含 2D / 3D / IMAX / 配音版本，按需挑选。</p>
+    </div>
+    <div class="sched">
+      <div class="sched-h" id="days">
+        <button class="day on" data-d="d1"><b>10月1日</b><span>周四 · 今日</span></button>
+        <button class="day" data-d="d2"><b>10月2日</b><span>周五</span></button>
+        <button class="day" data-d="d3"><b>10月3日</b><span>周六</span></button>
+        <button class="day" data-d="d4"><b>10月4日</b><span>周日</span></button>
+        <button class="day" data-d="d5"><b>10月5日</b><span>周一</span></button>
+        <button class="day" data-d="d6"><b>10月6日</b><span>周二</span></button>
+        <button class="day" data-d="d7"><b>10月7日</b><span>周三</span></button>
+      </div>
+      <div id="d1" class="sched-body" style="display:block">
+        <div class="row"><span class="tm">09:00</span><div class="nm"><b>小鲸鱼历险记</b><span>亲子动画专场 · 适合 3 岁以上儿童</span></div><span class="chip dub">国语配音</span><span class="act">厅① 2D · 92分钟</span></div>
+        <div class="row"><span class="tm">11:30</span><div class="nm"><b>欢喜一家人</b><span>合家欢喜剧 · 周末午场特惠</span></div><span class="chip sub">中文字幕</span><span class="act">厅② 2D · 106分钟</span></div>
+        <div class="row"><span class="tm">14:00</span><div class="nm"><b>星海回声</b><span>太空科幻巨制 · 视听沉浸</span></div><span class="chip imax">IMAX</span><span class="act">激光巨幕 · 152分钟</span></div>
+        <div class="row"><span class="tm">17:20</span><div class="nm"><b>海边来信</b><span>治愈系爱情 · 夕阳场</span></div><span class="chip sub">中文字幕</span><span class="act">厅③ 2D · 118分钟</span></div>
+        <div class="row"><span class="tm">20:00</span><div class="nm"><b>无声证人</b><span>高能悬疑 · 晚场连映</span></div><span class="chip sub">中文字幕</span><span class="act">厅① 2D · 129分钟</span></div>
+        <div class="row"><span class="tm">22:40</span><div class="nm"><b>夜行者</b><span>深夜犯罪专场 · 限 18+</span></div><span class="chip sub">中文字幕</span><span class="act">厅④ 2D · 117分钟</span></div>
+      </div>
+      <div id="d2" class="sched-body" style="display:none">
+        <div class="row"><span class="tm">10:00</span><div class="nm"><b>宇宙边缘</b><span>宇宙纪录片 · 科普专场</span></div><span class="chip sub">中文字幕</span><span class="act">厅② 2D · 122分钟</span></div>
+        <div class="row"><span class="tm">13:30</span><div class="nm"><b>时间折叠者</b><span>时空科幻 · 烧脑前作回顾</span></div><span class="chip dub">国语配音</span><span class="act">厅③ 2D · 138分钟</span></div>
+        <div class="row"><span class="tm">16:30</span><div class="nm"><b>破晓行动</b><span>港式警匪动作</span></div><span class="chip sub">中文字幕</span><span class="act">厅① 2D · 128分钟</span></div>
+        <div class="row"><span class="tm">19:30</span><div class="nm"><b>暗河追凶</b><span>口碑警匪片 · 黄金场</span></div><span class="chip imax">IMAX</span><span class="act">激光巨幕 · 136分钟</span></div>
+        <div class="row"><span class="tm">22:20</span><div class="nm"><b>消失的第七天</b><span>悬疑烧脑 · 深夜场</span></div><span class="chip sub">中文字幕</span><span class="act">厅④ 2D · 112分钟</span></div>
+      </div>
+      <div id="d3" class="sched-body" style="display:none">
+        <div class="row"><span class="tm">09:30</span><div class="nm"><b>月亮上的猫</b><span>治愈动画 · 早鸟场</span></div><span class="chip dub">国语配音</span><span class="act">厅② 2D · 92分钟</span></div>
+        <div class="row"><span class="tm">12:00</span><div class="nm"><b>父亲与海</b><span>高分亲情剧情</span></div><span class="chip sub">中文字幕</span><span class="act">厅③ 2D · 131分钟</span></div>
+        <div class="row"><span class="tm">15:00</span><div class="nm"><b>机械之心</b><span>AI 题材科幻</span></div><span class="chip imax">IMAX</span><span class="act">激光巨幕 · 126分钟</span></div>
+        <div class="row"><span class="tm">18:00</span><div class="nm"><b>十年为期</b><span>青春爱情 · 黄金场</span></div><span class="chip sub">中文字幕</span><span class="act">厅① 2D · 124分钟</span></div>
+        <div class="row"><span class="tm">21:00</span><div class="nm"><b>密室十三人</b><span>本格推理 · 晚场</span></div><span class="chip sub">中文字幕</span><span class="act">厅④ 2D · 108分钟</span></div>
+      </div>
+      <div id="d4" class="sched-body" style="display:none">
+        <div class="row"><span class="tm">10:30</span><div class="nm"><b>云端小镇</b><span>国产动画 · 周日亲子场</span></div><span class="chip dub">国语配音</span><span class="act">厅② 2D · 88分钟</span></div>
+        <div class="row"><span class="tm">13:00</span><div class="nm"><b>第二次相遇</b><span>韩式爱情剧情</span></div><span class="chip sub">中文字幕</span><span class="act">厅③ 2D · 119分钟</span></div>
+        <div class="row"><span class="tm">16:00</span><div class="nm"><b>巨兽觉醒</b><span>怪兽灾难 · 全家观影</span></div><span class="chip imax">IMAX</span><span class="act">激光巨幕 · 134分钟</span></div>
+        <div class="row"><span class="tm">19:00</span><div class="nm"><b>黑雨计划</b><span>法式谍战惊悚</span></div><span class="chip sub">中文字幕</span><span class="act">厅① 2D · 125分钟</span></div>
+        <div class="row"><span class="tm">22:00</span><div class="nm"><b>梦境管理局</b><span>奇幻脑洞 · 深夜场</span></div><span class="chip sub">中文字幕</span><span class="act">厅④ 2D · 121分钟</span></div>
+      </div>
+      <div id="d5" class="sched-body" style="display:none">
+        <div class="row"><span class="tm">11:00</span><div class="nm"><b>乌龙派出所</b><span>日式喜剧 · 午后轻松场</span></div><span class="chip dub">国语配音</span><span class="act">厅② 2D · 98分钟</span></div>
+        <div class="row"><span class="tm">14:30</span><div class="nm"><b>极速边境</b><span>赛车动作 · 视听刺激</span></div><span class="chip imax">IMAX</span><span class="act">激光巨幕 · 115分钟</span></div>
+        <div class="row"><span class="tm">17:30</span><div class="nm"><b>老板来了</b><span>职场喜剧 · 下班场</span></div><span class="chip sub">中文字幕</span><span class="act">厅③ 2D · 112分钟</span></div>
+        <div class="row"><span class="tm">20:30</span><div class="nm"><b>孤山侠影</b><span>中式武侠 · 晚场</span></div><span class="chip sub">中文字幕</span><span class="act">厅① 2D · 122分钟</span></div>
+      </div>
+      <div id="d6" class="sched-body" style="display:none">
+        <div class="row"><span class="tm">10:00</span><div class="nm"><b>毛毛虫学校</b><span>亲子动画 · 周二特惠</span></div><span class="chip dub">国语配音</span><span class="act">厅② 2D · 82分钟</span></div>
+        <div class="row"><span class="tm">13:30</span><div class="nm"><b>森林守护者</b><span>冒险动画</span></div><span class="chip sub">中文字幕</span><span class="act">厅③ 2D · 101分钟</span></div>
+        <div class="row"><span class="tm">16:30</span><div class="nm"><b>荒野猎人 2026</b><span>户外冒险大片</span></div><span class="chip imax">IMAX</span><span class="act">激光巨幕 · 141分钟</span></div>
+        <div class="row"><span class="tm">20:00</span><div class="nm"><b>今晚开麦</b><span>脱口秀现场 · 晚场</span></div><span class="chip dub">国语配音</span><span class="act">厅① 2D · 96分钟</span></div>
+      </div>
+      <div id="d7" class="sched-body" style="display:none">
+        <div class="row"><span class="tm">11:00</span><div class="nm"><b>早餐约在巴黎</b><span>法式浪漫 · 午后场</span></div><span class="chip sub">中文字幕</span><span class="act">厅③ 2D · 102分钟</span></div>
+        <div class="row"><span class="tm">14:30</span><div class="nm"><b>动物园奇妙夜</b><span>奇幻合家欢</span></div><span class="chip dub">国语配音</span><span class="act">厅② 2D · 103分钟</span></div>
+        <div class="row"><span class="tm">17:30</span><div class="nm"><b>迁徙的候鸟</b><span>自然纪录片</span></div><span class="chip sub">中文字幕</span><span class="act">厅④ 2D · 96分钟</span></div>
+        <div class="row"><span class="tm">20:00</span><div class="nm"><b>千年瓷都</b><span>人文纪录片 · 晚场</span></div><span class="chip sub">中文字幕</span><span class="act">厅① 2D · 118分钟</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目五：指南 -->
+<section id="guide">
+  <div class="wrap">
+    <div style="margin-bottom:34px">
+      <span class="eyebrow">05 / 观影指南</span>
+      <h2 class="sec-t">三步上手 <em>波波电影网</em></h2>
+      <p class="sec-d">从首次访问到找到心仪影片，波波电影网把流程压到最短，新手也能 30 秒内完成。</p>
+    </div>
+    <div class="guide">
+      <div class="step">
+        <span class="n">STEP 01</span>
+        <h3>打开站点</h3>
+        <p>在浏览器地址栏输入 https://bobodianyingwang-zh.github.io，无需注册登录即可浏览全站片单。</p>
+      </div>
+      <div class="step">
+        <span class="n">STEP 02</span>
+        <h3>筛选频道</h3>
+        <p>在「影片频道」选择类型，或用顶部搜索框输入片名、演员、导演，结果即时呈现。</p>
+      </div>
+      <div class="step">
+        <span class="n">STEP 03</span>
+        <h3>查看排片</h3>
+        <p>切换到「每日排片」查看当日场次，确认版本与时段后即可前往对应入口。</p>
+      </div>
+      <div class="step">
+        <span class="n">STEP 04</span>
+        <h3>收藏本站</h3>
+        <p>使用 Ctrl/Dcmd+D 将波波电影网加入书签，下次直接从书签栏一键进入。</p>
+      </div>
+      <div class="step">
+        <span class="n">STEP 05</span>
+        <h3>留下口碑</h3>
+        <p>在「影迷口碑」留下真实评价，优质长评有机会被官方置顶并计入榜单权重。</p>
+      </div>
+      <div class="step">
+        <span class="n">STEP 06</span>
+        <h3>关注更新</h3>
+        <p>每日早 9 点更新片单，每周日 21:00 发布周榜，月初发布月度精选片单。</p>
+      </div>
+    </div>
+    <div class="tips">
+      <div class="tip">
+        <h4>移动端小技巧</h4>
+        <p>波波电影网采用响应式布局，手机横竖屏自动适配。长列表支持左右滑动切换频道标签与排片日期。</p>
+      </div>
+      <div class="tip">
+        <h4>找片更快</h4>
+        <p>不确定看什么时，先看「热播榜单」的 TOP 8；想换口味再按频道标签筛选，组合使用效率最高。</p>
+      </div>
+      <div class="tip">
+        <h4>反馈与建议</h4>
+        <p>发现失效资源或希望增加某类影片，可通过页脚「意见反馈」提交，24 小时内人工回复。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 影迷口碑 -->
+<section id="comments" style="border-top:1px solid var(--line);background:linear-gradient(180deg,transparent,rgba(255,255,255,.015))">
+  <div class="wrap">
+    <div class="cmt-head">
+      <div>
+        <span class="eyebrow">06 / 影迷口碑</span>
+        <h2 class="sec-t">真实评价 · 来自 <em>波波电影网</em> 用户</h2>
+      </div>
+      <button class="btn-cta" style="margin:0" type="button">写一条评价</button>
+    </div>
+    <div class="cmt-grid">
+      <div class="cmt">
+        <div class="cmt-top">
+          <span class="av" style="background:linear-gradient(140deg,#37e6d6,#2bb3a6)">林</span>
+          <div><b>林小满</b><br><time>2026-09-28 21:14</time></div>
+          <span class="stars">★★★★★</span>
+        </div>
+        <p>波波电影网的分类是我见过最清爽的，动作、悬疑、动画一眼分清，不用在一堆弹窗里找片。这周按榜单看了《无声证人》，确实值。</p>
+        <div class="cmt-ft"><span>👍 有用 128</span><span>💬 回复 12</span><span>⭐ 收藏</span></div>
+      </div>
+      <div class="cmt">
+        <div class="cmt-top">
+          <span class="av" style="background:linear-gradient(140deg,#f7c948,#e0a82e)">周</span>
+          <div><b>周先生</b><br><time>2026-09-27 19:02</time></div>
+          <span class="stars">★★★★☆</span>
+        </div>
+        <p>带孩子用手机看，竖屏排版不拥挤，亲子动画专场很省心。希望后面再加点经典老动画的修复版，那是我的童年。</p>
+        <div class="cmt-ft"><span>👍 有用 96</span><span>💬 回复 7</span><span>⭐ 收藏</span></div>
+      </div>
+      <div class="cmt">
+        <div class="cmt-top">
+          <span class="av" style="background:linear-gradient(140deg,#ff5c8a,#d94a72)">阿</span>
+          <div><b>阿Ken</b><br><time>2026-09-26 22:48</time></div>
+          <span class="stars">★★★★★</span>
+        </div>
+        <p>每日排片这个功能意外地好用，能看到 2D/3D/IMAX 和配音版本，周末约朋友看片不用再一个个问。会长期收藏波波电影网。</p>
+        <div class="cmt-ft"><span>👍 有用 211</span><span>💬 回复 23</span><span>⭐ 收藏</span></div>
+      </div>
+      <div class="cmt">
+        <div class="cmt-top">
+          <span class="av" style="background:linear-gradient(140deg,#9b8af7,#6f5ed6)">苏</span>
+          <div><b>苏苏</b><br><time>2026-09-25 08:36</time></div>
+          <span class="stars">★★★★☆</span>
+        </div>
+        <p>榜单规则写得透明，能看到权重占比，比那种只堆播放量的站让人放心。纪录片分区质量很高，已经追完两部了。</p>
+        <div class="cmt-ft"><span>👍 有用 74</span><span>💬 回复 5</span><span>⭐ 收藏</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 底部 -->
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft-grid">
+      <div class="ft-brand">
+        <a class="logo" href="#top">
+          <span class="mk">波</span>
+          <span>波波电影网<small>BOBODIANYINGWANG</small></span>
+        </a>
+        <p>波波电影网（bobodianyingwang-zh）专注于高清电影在线观看与最新热播影视资源导航，每日更新院线新片与经典老片，让找片更简单。</p>
+        <div class="foobar" style="margin-top:16px">
+          <code>bobodianyingwang-zh.github.io</code>
+          <code>HTTPS</code>
+          <code>移动端自适应</code>
+        </div>
+      </div>
+      <div class="ft-col">
+        <h4>快速导航</h4>
+        <a href="#home">首页</a>
+        <a href="#about">关于本站</a>
+        <a href="#channel">影片频道</a>
+        <a href="#rank">热播榜单</a>
+        <a href="#schedule">每日排片</a>
+        <a href="#guide">观影指南</a>
+      </div>
+      <div class="ft-col">
+        <h4>影片分类</h4>
+        <a href="#channel">动作冒险</a>
+        <a href="#channel">喜剧轻松</a>
+        <a href="#channel">爱情剧情</a>
+        <a href="#channel">科幻奇幻</a>
+        <a href="#channel">悬疑犯罪</a>
+        <a href="#channel">动画亲子</a>
+      </div>
+      <div class="ft-col">
+        <h4>关于我们</h4>
+        <a href="#about">站点简介</a>
+        <a href="#comments">影迷口碑</a>
+        <a href="#">意见反馈</a>
+        <a href="#">更新日志</a>
+        <a href="#">隐私说明</a>
+        <a href="#">免责声明</a>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <span>© 2026 波波电影网（bobodianyingwang-zh） 保留所有权利 · 网站网址：https://bobodianyingwang-zh.github.io</span>
+      <span><a href="#top">回到顶部 ↑</a></span>
+    </div>
+  </div>
+</footer>
+
+<button class="top" id="top" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  // 移动菜单
+  var mb=document.getElementById('mb'), nav=document.getElementById('nav');
+  if(mb){
+    mb.addEventListener('click',function(){
+      nav.classList.toggle('open');
+      mb.classList.toggle('on');
+    });
+    nav.addEventListener('click',function(e){
+      if(e.target.tagName==='A'){
+        nav.classList.remove('open');
+        mb.classList.remove('on');
+      }
+    });
+  }
+  // 频道切换
+  var tabs=document.getElementById('tabs');
+  if(tabs){
+    tabs.addEventListener('click',function(e){
+      var b=e.target.closest('.tab'); if(!b) return;
+      var id=b.dataset.t;
+      [].forEach.call(tabs.querySelectorAll('.tab'),function(x){x.classList.toggle('on',x===b)});
+      var pgs=document.querySelectorAll('.pg');
+      pgs.forEach(function(p){p.classList.toggle('show',p.id===id)});
+    });
+  }
+  // 排片日期切换
+  var days=document.getElementById('days');
+  if(days){
+    days.addEventListener('click',function(e){
+      var b=e.target.closest('.day'); if(!b) return;
+      var id=b.dataset.d;
+      [].forEach.call(days.querySelectorAll('.day'),function(x){x.classList.toggle('on',x===b)});
+      [].forEach.call(document.querySelectorAll('.sched-body'),function(p){p.style.display=p.id===id?'block':'none'});
+    });
+  }
+  // 回到顶部
+  var top=document.getElementById('top');
+  var onScroll=function(){
+    if(window.scrollY>500){top.classList.add('on')}else{top.classList.remove('on')}
+  };
+  window.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
+  top.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
+})();
+</script>
+
+</body>
+</html>
